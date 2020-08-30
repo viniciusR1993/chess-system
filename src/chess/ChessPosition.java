@@ -28,7 +28,7 @@ public class ChessPosition {
 	}											   //column - 'a' é a subtração do condigo unicode da colunam vusti que a coluna vai de 0 a 7, porém no layout vai de a até h.
 	
 	protected static ChessPosition fromPosition(Position position) {	//mesmo caso que o metodo acima porém inverso
-		return new ChessPosition((char)('a' - position.getColumn()),8 - position.getRow());
+		return new ChessPosition((char)('a' + position.getColumn()),8 - position.getRow());
 	}
 	
 	@Override
