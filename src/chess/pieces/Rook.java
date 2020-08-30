@@ -25,8 +25,7 @@ public class Rook extends ChessPiece { // Torre
 
 		// above - percorre as possibilidade acima
 		p.setValues(position.getRow() - 1, position.getColumn());
-		while (getBoard().positionExistis(p) && !getBoard().thereIsAPiece(p)) { // repete enquanto existir casas e se
-																				// essa casa possui peça
+		while (getBoard().positionExistis(p) && !getBoard().thereIsAPiece(p)) { // repete enquanto existir casas e se. Essa casa possui peça
 			mat[p.getRow()][p.getColumn()] = true;
 			p.setRow(p.getRow() - 1);
 		}
@@ -36,8 +35,7 @@ public class Rook extends ChessPiece { // Torre
 
 		// below - percorre as possibilidade abaixo
 		p.setValues(position.getRow() + 1, position.getColumn());
-		while (getBoard().positionExistis(p) && !getBoard().thereIsAPiece(p)) { // repete enquanto existir casas e se
-																				// essa casa possui peça
+		while (getBoard().positionExistis(p) && !getBoard().thereIsAPiece(p)) { // repete enquanto existir casas e se. Essa casa possui peça
 			mat[p.getRow()][p.getColumn()] = true;
 			p.setRow(p.getRow() + 1);
 		}
@@ -47,8 +45,7 @@ public class Rook extends ChessPiece { // Torre
 
 		// left - percorre as possibilidade a esquerda
 		p.setValues(position.getRow(), position.getColumn() - 1);
-		while (getBoard().positionExistis(p) && !getBoard().thereIsAPiece(p)) { // repete enquanto existir casas e se
-																				// essa casa possui peça
+		while (getBoard().positionExistis(p) && !getBoard().thereIsAPiece(p)) { // repete enquanto existir casas e se. Essa casa possui peça
 			mat[p.getRow()][p.getColumn()] = true;
 			p.setColumn(p.getColumn() - 1);
 		}
@@ -58,8 +55,7 @@ public class Rook extends ChessPiece { // Torre
 
 		// right - percorre as possibilidade a direita
 		p.setValues(position.getRow(), position.getColumn() + 1);
-		while (getBoard().positionExistis(p) && !getBoard().thereIsAPiece(p)) { // repete enquanto existir casas e se
-																				// essa casa possui peça
+		while (getBoard().positionExistis(p) && !getBoard().thereIsAPiece(p)) { // repete enquanto existir casas e se. Essa casa possui peça
 			mat[p.getRow()][p.getColumn()] = true;
 			p.setColumn(p.getColumn() + 1);
 		}
