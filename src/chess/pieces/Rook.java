@@ -19,8 +19,7 @@ public class Rook extends ChessPiece { // Torre
 	@Override
 	public boolean[][] possibleMoves() { // Move pra cima e pra baixo, esquerda e direita. até não ter peça aliada ou
 											// até ter uma peça adversaria para captura
-		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()]; // Provisorio
-
+		boolean[][] mat = new boolean[getBoard().getRows()][getBoard().getColumns()]; 
 		Position p = new Position(0, 0);
 
 		// above - percorre as possibilidade acima
