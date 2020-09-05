@@ -38,6 +38,12 @@ public class Program {
 				if(capturedPiece != null) {		//Se a peça capturad for diferente de nula, ele adiciona a lista
 					captured.add(capturedPiece);
 				}
+				
+				if(chessMatch.getPromoted() != null) {
+					System.out.println("Enter piece for promotion (B/N/Q/R): ");
+					String type = sc.nextLine();
+					chessMatch.replacePromotedPiece(type);
+				}
 			}catch(ChessException e) {	//Com esse tratamento o programa não quebra, continua funcionando
 				System.out.println(e.getMessage());
 				sc.nextLine();
